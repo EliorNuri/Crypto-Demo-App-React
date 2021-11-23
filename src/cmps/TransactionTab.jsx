@@ -17,7 +17,7 @@ function TransactionTab() {
                 <span className="icon-wrapper">
                     <SiWebmoney />
                 </span>
-                <span>{`${transactionCoin.name}/${utilService.formatToUpperCase(transactionCoin.symbol)} `} </span>
+                <span>{`${transactionCoin.name || ""}/${utilService.formatToUpperCase(transactionCoin.symbol)|| ""} `} </span>
             </h2>
             <h6 className="xs-subtitle">Chosen Coin</h6>
             <div className="transaction-type-container">

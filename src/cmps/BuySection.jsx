@@ -36,14 +36,14 @@ function BuySection() {
 
     return (
         <div className="buy-section-container">
-            <PriceRow coin={transactionCoin} />
+            <PriceRow coin={transactionCoin} /> 
             <h4 className="xs-subtitle flex row center">My Balance</h4>
-            <TransactionInputSection ammount={utilService.formatPrice(wallet.balance)} isDisabled={true} />
+            <TransactionInputSection ammount={utilService.formatPrice(wallet.balance) || ""} isDisabled={true} />
             <h4 className="xs-subtitle flex row center">Coin Value</h4>
-            <TransactionInputSection ammount={utilService.formatPrice(coinValue)} cb={handleCoinValueChange} isDisabled={true} />
+            <TransactionInputSection ammount={utilService.formatPrice(coinValue) || ""} cb={handleCoinValueChange} isDisabled={true} />
             <h4 className="xs-subtitle flex row center">Coin Amount</h4>
             <TransactionInputSection ammount={coinToBuy} cb={handleCoinAmountChange} />
-            <div onClick={buyCryptoCoin} className="base-btn">Buy {utilService.formatToUpperCase(transactionCoin.symbol)}</div>
+            <div onClick={buyCryptoCoin} className="base-btn">Buy {utilService.formatToUpperCase(transactionCoin.symbol) || ""}</div>
         </div>
     )
 }

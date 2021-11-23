@@ -29,7 +29,7 @@ function formatPrice(price) {
 
     // formatter.format(2500); /* $2,500.00 */
 
-    return formatter.format(price);;
+    return formatter.format(price);
 }
 
 function formatCoinCount(ammount) {
