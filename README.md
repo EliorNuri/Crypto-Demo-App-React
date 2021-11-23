@@ -1,5 +1,5 @@
-### Demo Crypto App Create With useContext and useReducer as state management
-### Responsive Design
+### Demo Responsive Crypto App Create With useContext and useReducer as state management
+#### using coingecko API 
 
 ## https://cryptodemoapp.netlify.app/
 
