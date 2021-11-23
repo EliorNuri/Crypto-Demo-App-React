@@ -1,0 +1,7 @@
+.trending-section-container{
+    width:100%;
+    
+    & > * {
+        flex:1;
+    }
+}

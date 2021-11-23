@@ -1,0 +1,13 @@
+.wallet-coin-movement{
+    .wallet-coin-price-container{
+        & >:first-child{
+            font-weight: bold;
+        }
+    }
+    .base-btn{
+        color: var(--color-txt-s);
+        border-radius: 5px;
+        font-weight: bold;
+        background-color: var(--color-feature-secondary);
+    }
+}

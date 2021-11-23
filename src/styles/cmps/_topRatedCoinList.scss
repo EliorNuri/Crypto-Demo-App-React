@@ -1,0 +1,74 @@
+.top-rated-list-container{
+    .main-chart-container{
+        padding: 20px;
+        width: 100%;
+        height: 500px;
+        background-color: var(--color-secondary);
+        border-radius: 15px;
+        margin-bottom: 100px;
+    }
+
+    .chart-header{
+        width: 100%;
+        padding: 0px 20px 50px 20px;
+        & > * > * {
+            margin-right: 20px;
+        }
+        .crypto-currency-img{
+            width: 35px;
+            height: 35px;
+        }
+        h2{
+            color: var(--color-txt-primary);
+        }
+
+        .chart-header-conversion{
+            flex: 1;
+        }
+
+        .chart-header-details{
+            text-align: center;
+            & > div > :first-child{
+                @include xs-subtitle;
+                margin: 0px 0px 8px 0px;
+                font-size: 0.6rem;
+            }
+            & > div > :last-child{
+                margin: 0px;
+               color: var(--color-txt-primary);
+            }
+        }
+
+    }
+    
+}
+
+@media (max-width:720px) {
+    .top-rated-list-container .chart-header{
+        .chart-header-details{
+            & > * {
+                display: none;
+            }
+
+            & > *:first-child{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media (max-width:450px) {
+    .top-rated-list-container{
+        .chart-header{
+            padding: 0px 0px 50px 0px;
+            h2{
+                font-size: 1.1rem;
+            }
+        }
+        .main-chart-container{
+            margin-bottom: 20px;
+        }
+    }
+    
+}

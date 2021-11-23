@@ -1,0 +1,11 @@
+.container-view{
+    padding: 40px 40px 40px 100px;
+}
+
+@media (max-width:570px) {
+    .container-view{
+        padding:0px;
+        padding-bottom: 90px;
+    }
+    
+}

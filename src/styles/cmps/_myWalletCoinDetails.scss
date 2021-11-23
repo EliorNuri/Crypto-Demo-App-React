@@ -1,0 +1,15 @@
+.my-wallet-coin-details-container{
+    color: var(--color-txt-primary);
+    padding: 20px;
+    & > *:not(h2) {
+        margin-bottom: 10px;
+    }
+    h2{
+        margin-bottom: 5px;
+    }
+    .sub-title{
+        margin-bottom: 30px;
+        color: var(--color-feature-primary);
+    }
+}
+

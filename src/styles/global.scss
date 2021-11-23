@@ -1,0 +1,37 @@
+
+@import './setup/typo';
+@import './setup/vars';
+@import './setup/mixins';
+@import './setup/func';
+
+@import './basic/base';
+@import './basic/helpers';
+@import './basic/layout';
+
+@import './cmps/navbar';
+@import './cmps/transactionTab';
+@import './cmps/buySection';
+@import './cmps/priceRow';
+@import './cmps/homepage';
+@import './cmps/searchInput';
+@import './cmps/topRatedCoinList';
+@import './cmps/topRatedCoinPreview';
+@import './cmps/mainChart';
+@import './cmps/trendingCoinsSection';
+@import './cmps/coinsList';
+@import './cmps/coinPreview';
+@import './cmps/coinsDataChart';
+@import './cmps/newCoinsSection';
+@import './cmps/platformList';
+@import './cmps/platformPreview';
+@import './cmps/transactionInputSection';
+@import './cmps/sellSection';
+@import './cmps/myCoinsList';
+@import './cmps/myCoinsPreview';
+@import './cmps/myWallet';
+@import './cmps/myWalletCoinsList';
+@import './cmps/myWalletCoinPreview';
+@import './cmps/myWalletCoinDetails';
+@import './cmps/myWalletLastMovements';
+@import './cmps/myWalletSumCoinsRow';
+@import './cmps/discover';

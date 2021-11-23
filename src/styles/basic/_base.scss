@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+html{
+    font-size: 15px;
+    font-family:  src-sans-reg, open-sans-reg, Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    background-color: var(--color-primary);
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+button, .btn{
+    cursor: pointer;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.App{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    & > * {
+        flex: 1;
+    }
+}
+
+.app-screen{
+    background-color: rgba(0, 0, 0);
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    &.screen-open{
+        opacity: 0.7;
+        z-index: 1000;
+    }
+}
+
+.crypto-currency-img, .platform-image{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    @include img-default;
+}
+
+.icon-wrapper{
+    @include flex-row-center;
+    cursor: pointer;
+}
+
+.xs-subtitle{
+    @include xs-subtitle
+}
+
+.trend{
+    font-size: 1.2rem;
+}
+
+.trend-ascent{
+    color: var(--color-trend-ascent);
+}
+
+.trend-descent{
+    color: var(--color-trend-descent);
+}
+
+.coin-rank{
+    padding: 3px 8px ;
+    border-radius: 20px;
+    color: var(--color-txt-primary);
+    background-color: var(--color-feature-secondary);
+}
+
+.secure-icon{
+    color: var(--color-feature-secondary);
+    margin: 0px 8px;
+}
+
+.active-tab{
+    background-color: var(--color-txt-primary);
+    color: var(--color-primary);
+}
+
+.base-btn{
+    font-size: 0.8rem;
+    padding: 7px 8px;
+    background-color: var(--color-txt-primary);
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--clr-primary);
+    font-weight: bold;
+    transition: all 0.3s linear;
+    text-align: center;
+    &:hover{
+       
+    }
+    & :first-child{
+        margin-right: 4px;
+    }
+}
+
+
+.calc-symbol{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0px 15px;
+}
+
+.wallet-balance{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    color: var(--color-txt-primary);
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 3px solid var(--color-secondary);
+    border-radius: 10px;
+    max-width: 340px;
+}
+
+.crypto-platform-title{
+    text-align: center;
+    margin-bottom: 5px;
+    &.crypto-platform-sub-title{
+        margin-bottom: 30px;
+        color: var(--color-txt-secondary);
+    }
+}
+
+.recharts-layer.recharts-cartesian-axis-tick{
+    line, text{
+        fill: var(--color-txt-secondary);
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+}
+
+.recharts-cartesian-grid-vertical{
+    line{
+        display: none;
+    }
+}
+
+.recharts-cartesian-grid-horizontal{
+    line{
+        stroke: var(--color-txt-secondary);
+    }
+}
+
+ .recharts-cartesian-axis.recharts-yAxis{
+    line{
+        display: none;
+    }
+}
+
+.recharts-tooltip-item{
+    color: var(--color-primary) !important;
+    font-weight: bold;
+}
+
+.recharts-tooltip-item-name, .recharts-tooltip-item-separator{
+    display: none !important;
+}
+
+.recharts-default-tooltip{
+    border-radius: 10px;
+}

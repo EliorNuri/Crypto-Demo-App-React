@@ -1,0 +1,121 @@
+.my-wallet-container{
+    padding: 0px 30px;
+    h1,h2{
+        color: var(--color-txt-primary);
+    }
+    
+    & > *:not(.my-wallet-grid) {
+        margin-bottom: 30px;
+    }
+    .content-header{
+        & >:last-child{
+            color: var(--color-txt-secondary);
+
+        }
+    }
+
+    .xs-subtitle{
+        margin-right: 30px;
+    }
+
+    .my-wallet-grid{
+        flex: 1;
+        display: grid;
+        grid-template-columns: 1fr 340px ;
+        grid-gap: 10px;
+        grid-template-rows: repeat(5,1fr);
+
+        & >:nth-child(1){
+            grid-area: 1/1/5/2;
+            border: 3px solid var(--color-secondary);
+            border-radius: 10px;
+            padding: 20px;
+            background-color: var(--color-secondary);
+        }
+
+        & >:nth-child(2), & >:nth-child(3){
+            background-color: var(--color-secondary);
+            border-radius: 15px;
+        }
+
+        & >:nth-child(2){
+            grid-area: 1/2/3/3;
+
+        }
+        & >:nth-child(3){
+            grid-area: 3/2/5/3;
+
+        }
+
+        & >:nth-child(4){
+            grid-area: 5/1/6/3;
+            background-color: var(--color-secondary);
+        }
+    }
+}
+
+.wallet-coin-preview{
+    width: 100%;
+    padding: 10px 20px;
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    border: 0px solid black;
+    font-weight: bold;
+    .wallet-coin-price-container{
+        & > :first-child{
+            margin-right: 10px;
+            font-size: 0.9rem;
+            font-weight: 100;
+
+        }
+    }
+}
+
+@media (max-width:750px) {
+    .my-wallet-container{
+        padding: 10px;
+
+        .xs-subtitle{
+            margin: 0px;
+        }
+
+        .my-wallet-header{
+            flex-direction: column;
+            & > * {
+                text-align: center;
+                @include flex-column-center;
+            }
+            .content-header{
+                margin-bottom: 10px;
+            }
+        }
+
+        .my-wallet-grid{
+            display: flex;
+            flex-direction: column;
+            & > * {
+                margin-bottom: 10px;
+            }
+            .my-wallet-coin-list-container{
+                align-items: center;
+                justify-content: center;
+            }
+
+            
+            & >:nth-child(1){
+                order: 2;
+            }
+
+            & >:nth-child(2){
+                order: 3;
+            }
+            & >:nth-child(3){
+                order: 4;
+            }
+
+            & >:nth-child(4){
+                order: 1;
+            }
+        }
+    }
+}

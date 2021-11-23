@@ -1,0 +1,14 @@
+.transaction-input-section{
+    width: 100%;
+    padding: 10px 20px;
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    margin: 10px 0px;
+    input{
+        border: 0px solid black;
+        font-size: 1.1rem;
+        background-color: transparent;
+        text-align: center;
+        color: var(--color-txt-primary);
+    }
+}

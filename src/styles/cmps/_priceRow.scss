@@ -1,0 +1,13 @@
+.price-row-container{
+    color: var(--color-txt-primary);
+    margin: 20px 0px;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    & >:first-child{
+        color: var(--color-txt-secondary);
+    }
+    
+    .price-title{
+        margin-right: 15px;
+    }
+}

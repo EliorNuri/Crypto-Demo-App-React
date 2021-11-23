@@ -1,0 +1,17 @@
+.my-coin-preview{
+    padding: 10px 20px;
+    background-color: var(--color-primary);
+    color: var(--color-txt-primary);
+    border-radius: 10px;
+    margin: 10px 0px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    &.my-coin-preview-active{
+        background-color: var(--color-txt-primary);
+        color:var(--color-primary);
+    }
+    .crypto-currency-img{
+        margin-right: 10px;
+    }
+}

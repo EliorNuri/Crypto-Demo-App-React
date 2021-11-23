@@ -1,0 +1,25 @@
+.search-input-container{
+    padding: 15px;
+    border: 1px solid var(--color-txt-secondary);
+    border-radius: 10px;
+    color: var(--color-txt-secondary);
+    .icon-wrapper{
+        margin-right: 20px;
+        font-size: 1.1rem;
+        color: var(--color-txt-primary);
+    }
+    input{
+        width: 250px;
+        padding: 3px 0px;
+        background-color: var(--color-primary);
+        border: 0px solid white;
+        color: var(--color-txt-secondary);
+        font-size: 0.8rem;
+        font-weight: bold;
+
+    }
+    ::placeholder{
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+}

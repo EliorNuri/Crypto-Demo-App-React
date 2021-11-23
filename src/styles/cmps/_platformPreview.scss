@@ -1,0 +1,27 @@
+.platform-preview{
+    width: 20%;
+    text-align: center;
+    padding: 12px 20px;
+    background-color: var(--color-txt-primary);
+    opacity: 0.7;
+    margin: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    &:hover{
+        opacity: 1;
+    }
+    .platform-image{
+        margin-right: 10px;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+@media (max-width:700px) {
+    .platform-preview{
+        width:43%;
+    }
+}

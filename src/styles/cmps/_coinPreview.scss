@@ -1,0 +1,37 @@
+.coin-basic-preview{
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: var(--color-secondary);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-txt-primary);
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.3s linear;
+    &:nth-child(2n){
+        background-color: var(--color-secondary-shadow);
+    }
+    &.coin-basic-preview-active{
+        background-color: var(--color-txt-primary);
+        color: var(--color-primary);
+    }
+
+    & > * > * {
+        margin-right: 15px;
+    }
+
+    .crypto-currency-img{
+        height: 28px;
+        width: 28px;
+    }
+}
+
+@media (max-width:450px) {
+    .coin-basic-preview{
+        padding: 20px 10px;
+
+        & > * > *{
+            margin-right: 7px;
+        }
+    }
+}
